@@ -51,7 +51,15 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-  <build>
+   <build>
+      <testResources>
+         <testResource>
+            <directory>src/test/resources</directory>
+            <includes>
+               <include>**/*.tiff</include>
+            </includes>
+         </testResource>
+      </testResources>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
