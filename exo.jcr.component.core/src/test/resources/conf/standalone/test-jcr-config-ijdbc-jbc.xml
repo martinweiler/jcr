@@ -58,6 +58,8 @@
                <initializer class="org.exoplatform.services.jcr.impl.core.ScratchWorkspaceInitializer">
                   <properties>
                      <property name="root-nodetype" value="nt:unstructured" />
+                     <property name="root-permissions"
+                                value="*:/platform/administrators read;*:/platform/administrators add_node;*:/platform/administrators set_property;*:/platform/administrators remove"/>
                   </properties>
                </initializer>
                <cache enabled="${cache-enabled}"
